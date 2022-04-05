@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Assignment-8</title>
+</head>
+<body>
+    <script>
+        let user = {};
+        user.userId = 123456;
+        user.firstName = 'Vipin';
+        user.lastName = 'Menon';
+        user.password = 'vip123@';
+        user.country = 'India';
+        user.continent = 'Asia';
+
+        // (a)
+
+        console.log("(a)-Displaying all the values present in user object");
+        console.log(user.userId, user.firstName, user.lastName, user.password, user.country, user.continent);
+
+        // (b)
+
+        console.log("(b)-Deleting the country and continent property");
+        delete user.country;
+        delete user.continent;
+        console.log(user.userId, user.firstName, user.lastName, user.password);
+
+        // (c)
+
+        console.log("(c)-Displaying all the values present in user object using for loop after deleting ");
+        for (let key in user) {
+        console.log(user[key])
+        }
+ 
+    </script>
+    
+</body>
+</html>

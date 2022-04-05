@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        function User(userId, firstName, lastName, password, email, gender, age, accountCreated) {
+            this.UserID = userId;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.password = password;
+            this.email = email;
+            this.gender = gender;
+            this.age = age;
+            this.createdOn = accountCreated
+            this.displayAge = function () {
+                console.log(`${firstName} ${lastName} is "${age}" years old`);
+            }
+            this.displayAccountCreated = function () {
+                console.log(`${firstName} ${lastName} created account on ${accountCreated}`)
+            }
+        }
+        let user1,user2,user3,user4,user5;
+        console.log(user1 = new User(1234, 'Vipin', 'Menon', 'vip123@', 'vipinmenon006@gamil.com', 'male', 23,
+            '12/12/12'));
+        console.log(user2 = new User(7590, 'Prem', 'Kumar', 'bbn567@', 'premkumar224@gmail.com', 'male', 19,
+            '10/06/16'));
+        console.log(user3 = new User(7891, 'Christoper', 'Devasekran', 'ttf789@', 'chris123@gamil.com', 'male', 23,
+            '26/11/08'));
+        console.log(user4 = new User(3124, 'Mustaq', 'Ahamed', '432tfc@', 'mustaqahamed10@gmail.com', 'male', 22,
+            '17/08/20'));
+        console.log(user5 = new User(4121, 'Hari', 'Krishnan', 'abc321@', 'harikrish2904@gmail.com', 'male', 20,
+            '22/02/16'));
+
+            //Calling the methods inside the constructors
+
+            user1.displayAge();
+            user1.displayAccountCreated();
+            user2.displayAge();
+            user2.displayAccountCreated();
+            user3.displayAge();
+            user3.displayAccountCreated();
+            user4.displayAge();
+            user4.displayAccountCreated();
+            user5.displayAge();
+            user5.displayAccountCreated();
+
+    </script>
+</body>
+
+</html>

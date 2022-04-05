@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-23</title>
+</head>
+
+<body>
+    <b>
+        23.Write a function ‘nand’ that takes two Boolean values. If both values are ‘true’, the result
+        should be ‘false’. In the other cases the return should be ‘true’. <br>
+        I.e.: The call nand(true, true) should return ‘false’. The
+        calls nand(true, false), nand(false, true) and nand(false, false) should return ‘true’.
+    </b>
+    <script>
+        function nand(a, b) {
+            let and = a && b;
+            console.log(!and);
+        }
+        nand(true, true);
+        nand(true, false);
+        nand(false, true);
+        nand(false, false);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Handling Multiple Checkboxes">
+    <title>Handling Multiple Checkboxes</title> 
+</head>
+<body>
+    <h1>DOM - Handling Multiple Checkboxes</h1>
+    <p>Select the Subjects : </p>
+    <label for="s1">
+        <input type="checkbox" name="Subject" id="s1" value="English">English
+    </label>
+    <label for="s2">
+        <input type="checkbox" name="Subject" id="s2" value="Maths">Maths
+    </label>
+    <label for="s1">
+        <input type="checkbox" name="Subject" id="s3" value="Physics">Physics
+    </label>
+    <label for="s1">
+        <input type="checkbox" name="Subject" id="s4" value="Chemistry">Chemistry
+    </label>
+    <p>
+        <button id="btn">Get selected Subjects</button>
+    </p>
+
+    <script>
+
+        // Getting Selected Subjects using filter()
+
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click', (e) => {
+            let checkBoxes = Array.from(document.querySelectorAll('input[name="Subject"]'));
+            let values = [] ;
+            checkBoxes.filter((checkBox) => {
+                    if(checkBox.checked) {
+                values.push(checkBox.value);
+                }
+            });
+            console.log(values);
+        });
+            </script>
+</body>
+</html>

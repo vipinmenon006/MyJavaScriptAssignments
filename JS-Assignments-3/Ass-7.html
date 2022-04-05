@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Assignment-7</title>
+</head>
+<body>
+
+    <script>
+        let user = (userId, firstName, lastName, password, email, gender, age, accountCreated) =>
+            `userId-${userId}
+firstName-${firstName}
+lastName-${lastName}
+password-${password}
+email-${email}
+gender-${gender}
+age-${age}
+accountCreated-${accountCreated}`
+        
+        console.log(user(123456, 'Vipin', 'Menon', 'vip123@', 'vipinmenon006@gmail.com', 'male', 23, '19/12/21'));
+    </script>
+    
+</body>
+</html>

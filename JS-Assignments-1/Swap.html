@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //To Swap two Numbers
+
+        
+        let a = prompt("Enter the First Number");
+        let b = prompt("Enter the Second Number");
+        let temp;
+        function swap(a, b) {
+            temp = a;
+            a = b;
+            b = temp;
+            console.log(`After Swapping: a=${a} b=${b}`)
+        }
+        console.log(`Before Swapping: a=${a} b=${b}`)
+        swap(a, b);
+    </script>
+</body>
+</html>

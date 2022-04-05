@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="JavaScript-Assignment-3">
+    <title>JavaScript-Assignment-3</title>
+</head>
+<body>
+    <script>
+
+        const personDetails = {
+            userId: 123456,
+            firstName: 'Vipin',
+            lastName: 'Menon',
+            password: '@vip123',
+            email: 'vipinmenon006@gmail.com',
+            gender: 'male',
+            age: 22,
+            accountCreated: '19/12/21'
+        }
+
+        for (let key in personDetails) {
+            alert(`${key} - ${personDetails[key]}`)
+        }
+        for (let key in personDetails) {
+            console.log(`${key} - ${personDetails[key]}`)
+        }
+        for (let key in personDetails) {
+            document.write(`${key} - ${personDetails[key]}`)
+        }
+    </script>
+</body>
+</html>
